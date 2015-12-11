@@ -19,12 +19,13 @@ alias configapache='cd /etc/apache2/sites-available'
 alias editapachecommonrule='sudo vim /etc/apache2/sites-available/common_rule'
 alias editphpini='sudo vim /etc/php5/apache2/php.ini'
 
-# 可以快速的編輯該檔案，以及讓alias生效
-# 這個版本需要先在~/.bashrc中include
-# from ~/.bashrc
-## if [ -f ~/.bash_aliases ]; then
-##    . ~/.bash_aliases
-## fi
+# 快速編輯aliases
+這個版本需要先在~/.bashrc中include
+from ~/.bashrc
+if [ -f ~/.bash_aliases ]; then
+   . ~/.bash_aliases
+fi
+
 alias editalias='vim ~/.bash_aliases'
 alias rerunalias='source ~/.bashrc'
 
